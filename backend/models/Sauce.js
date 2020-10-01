@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+mongoose.set('useCreateIndex', true)
 
 const sauceSchema = mongoose.Schema({
   name: { type: String, required: true },
